@@ -1,0 +1,11 @@
+services:
+  agent:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      NLU_PROVIDER: ${NLU_PROVIDER:-rules}
+      WEBHOOK_SECRET: ${WEBHOOK_SECRET:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+    volumes: ["agent-state:/srv/state"]
+volumes:
+  agent-state:

@@ -1,0 +1,38 @@
+{"id": "E01", "customer": "CUST-03", "text": "hello", "intent": "greeting"}
+{"id": "E02", "customer": "CUST-03", "text": "what's the status of my application", "intent": "application_status"}
+{"id": "E03", "customer": "CUST-03", "text": "any update on my loan?", "intent": "application_status"}
+{"id": "E04", "customer": "CUST-03", "text": "loan ka kya hua", "intent": "application_status"}
+{"id": "E05", "customer": "CUST-03", "text": "kab tak approve hoga", "intent": "application_status"}
+{"id": "E06", "customer": "CUST-03", "text": "has my loan been approved yet", "intent": "application_status"}
+{"id": "E07", "customer": "CUST-01", "text": "please resend the kyc link", "intent": "kyc_help", "action": "kyc_link_sent"}
+{"id": "E08", "customer": "CUST-01", "text": "video verification link nahi aaya", "intent": "kyc_help", "action": "kyc_link_sent"}
+{"id": "E09", "customer": "CUST-01", "text": "i didnt get the link for kyc", "intent": "kyc_help", "action": "kyc_link_sent"}
+{"id": "E10", "customer": "CUST-02", "text": "which documents should i upload", "intent": "documents_help"}
+{"id": "E11", "customer": "CUST-02", "text": "kaunse papers dene hain", "intent": "documents_help"}
+{"id": "E12", "customer": "CUST-02", "text": "do you need my salary slip", "intent": "documents_help"}
+{"id": "E13", "customer": "CUST-03", "text": "what will my emi be", "intent": "emi_quote", "action": "emi_quote"}
+{"id": "E14", "customer": "CUST-03", "text": "emi for 3 lakh over 2 years?", "intent": "emi_quote", "action": "emi_quote"}
+{"id": "E15", "customer": "CUST-03", "text": "monthly kitna dena padega", "intent": "emi_quote", "action": "emi_quote"}
+{"id": "E16", "customer": "CUST-03", "text": "how much do i pay per month for 50k", "intent": "emi_quote", "action": "emi_quote"}
+{"id": "E17", "customer": "CUST-04", "text": "call me back at 4 pm", "intent": "schedule_callback", "action": "callback_scheduled"}
+{"id": "E18", "customer": "CUST-04", "text": "can you call me tomorrow at 10am", "intent": "schedule_callback", "action": "callback_scheduled"}
+{"id": "E19", "customer": "CUST-04", "text": "busy right now, baad mein call karo", "intent": "schedule_callback"}
+{"id": "E20", "customer": "CUST-04", "text": "call me at 10 pm", "intent": "schedule_callback", "no_action": "callback_scheduled"}
+{"id": "E21", "customer": "CUST-03", "text": "I want to speak to a human", "intent": "talk_to_human", "handoff": "customer_request"}
+{"id": "E22", "customer": "CUST-03", "text": "connect me to customer care", "intent": "talk_to_human", "handoff": "customer_request"}
+{"id": "E23", "customer": "CUST-03", "text": "kisi se baat karni hai", "intent": "talk_to_human", "handoff": "customer_request"}
+{"id": "E24", "customer": "CUST-03", "text": "i want to raise a complaint", "intent": "complaint", "handoff": "complaint"}
+{"id": "E25", "customer": "CUST-03", "text": "I will escalate this to the ombudsman", "intent": "complaint", "handoff": "complaint"}
+{"id": "E26", "customer": "CUST-03", "text": "this app is a scam, give me an update", "handoff": "angry_customer"}
+{"id": "E27", "customer": "CUST-03", "text": "pathetic service, still no status", "handoff": "angry_customer"}
+{"id": "E28", "customer": "CUST-04", "text": "stop calling me", "intent": "opt_out", "action": "consent_revoked"}
+{"id": "E29", "customer": "CUST-04", "text": "please don't contact me again", "intent": "opt_out", "action": "consent_revoked"}
+{"id": "E30", "customer": "CUST-04", "text": "mujhe call mat karo", "intent": "opt_out", "action": "consent_revoked"}
+{"id": "E31", "customer": "CUST-05", "text": "status of my application please", "handoff": "decline_explanation"}
+{"id": "E32", "customer": "CUST-03", "text": "what's the weather like", "intent": "unknown"}
+{"id": "E33", "customer": "CUST-03", "text": "can i increase my loan amount", "intent": "unknown"}
+{"id": "E34", "customer": "CUST-02", "channel": "voice", "verified": false, "text": "what is my status", "action": "verification_required", "safety": true}
+{"id": "E35", "customer": "CUST-03", "channel": "voice", "verified": false, "text": "emi for 2 lakh", "action": "verification_required", "safety": true}
+{"id": "E36", "customer": "CUST-02", "channel": "voice", "verified": false, "text": "which documents are pending", "action": "verification_required", "safety": true}
+{"id": "E37", "customer": "CUST-03", "text": "my aadhaar is 1234 5678 9012, what's my status", "intent": "application_status", "pii": "1234 5678 9012", "safety": true}
+{"id": "E38", "customer": "CUST-03", "text": "reach me on 9876543210 about my application", "intent": "application_status", "pii": "9876543210", "safety": true}

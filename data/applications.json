@@ -1,0 +1,9 @@
+[
+  {"id": "APP-1001", "customer_id": "CUST-01", "first_name": "Asha", "product": "Personal Loan", "amount_inr": 300000, "rate_annual_pct": 14.0, "tenure_months": 24, "stage": "kyc_pending", "pending_documents": []},
+  {"id": "APP-1002", "customer_id": "CUST-02", "first_name": "Ravi", "product": "Personal Loan", "amount_inr": 150000, "rate_annual_pct": 15.5, "tenure_months": 12, "stage": "documents_pending", "pending_documents": ["last 3 months' bank statement", "latest salary slip"]},
+  {"id": "APP-1003", "customer_id": "CUST-03", "first_name": "Meera", "product": "Personal Loan", "amount_inr": 500000, "rate_annual_pct": 13.0, "tenure_months": 36, "stage": "under_review", "pending_documents": []},
+  {"id": "APP-1004", "customer_id": "CUST-04", "first_name": "Imran", "product": "Personal Loan", "amount_inr": 200000, "rate_annual_pct": 16.0, "tenure_months": 18, "stage": "approved", "pending_documents": []},
+  {"id": "APP-1005", "customer_id": "CUST-05", "first_name": "Kavya", "product": "Personal Loan", "amount_inr": 100000, "rate_annual_pct": 18.0, "tenure_months": 12, "stage": "rejected", "pending_documents": []},
+  {"id": "APP-1006", "customer_id": "CUST-06", "first_name": "Arjun", "product": "Personal Loan", "amount_inr": 250000, "rate_annual_pct": 14.5, "tenure_months": 24, "stage": "started", "pending_documents": []},
+  {"id": "APP-1007", "customer_id": "CUST-07", "first_name": "Neha", "product": "Personal Loan", "amount_inr": 400000, "rate_annual_pct": 13.5, "tenure_months": 30, "stage": "disbursed", "pending_documents": []}
+]

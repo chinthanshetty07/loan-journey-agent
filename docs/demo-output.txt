@@ -1,0 +1,33 @@
+
+--- CUST-01 on in_app (verified) ---
+customer: loan ka kya hua
+agent:    Your application is waiting for video KYC. Shall I send the KYC link to your registered mobile number?
+customer: haan
+agent:    Done. I've sent the video KYC link to your registered mobile number.
+          actions=['kyc_link_sent'] handoff=None
+
+--- CUST-03 on voice (verified) ---
+customer: emi for 5 lakh over 3 years
+agent:    For ₹5,00,000 over 36 months at 13% a year, the EMI would be about ₹16,847 a month. Your loan agreement will show the exact amount.
+tts:      For 5 lakh rupees over 36 months at 13% a year, the E M I would be about 16 thousand 847 rupees a month. Your loan agreement will show the exact amount.
+          actions=['emi_quote'] handoff=None
+
+--- CUST-02 on voice (not verified) ---
+customer: which documents are pending
+agent:    For your security, please verify with the OTP sent to your registered mobile number before I share application details.
+tts:      For your security, please verify with the OTP sent to your registered mobile number before I share application details.
+          actions=['verification_required'] handoff=None
+
+--- CUST-04 on whatsapp (verified) ---
+customer: call me back
+agent:    Sure. What time works for you? We can call between 9 am and 7 pm.
+customer: 9pm
+agent:    We only call between 9 am and 7 pm. Shall I book tomorrow at 9 am instead?
+customer: ok
+agent:    Booked. We'll call you tomorrow at 9 am.
+          actions=['callback_scheduled'] handoff=None
+
+--- CUST-05 on in_app (verified) ---
+customer: any update on my application?
+agent:    I'm sorry, your application wasn't approved this time. I'm connecting you to an executive who can explain the decision.
+          actions=['handoff'] handoff=decline_explanation
