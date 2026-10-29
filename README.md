@@ -1,5 +1,7 @@
 # Loan Journey Agent
 
+[![CI](https://github.com/chinthanshetty07/loan-journey-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/chinthanshetty07/loan-journey-agent/actions/workflows/ci.yml)
+
 A FastAPI backend for an AI assistant that lives inside a lender's app, voice line or WhatsApp
 and helps customers through a loan application: where it stands, the KYC link, pending
 documents, an EMI estimate, or a callback at a time that suits them. It hands the conversation
